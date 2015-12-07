@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical" >
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/method">
+
+        <RadioButton android:id="@+id/radioGet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/get"
+            android:onClick="onMethodButtonClicked"/>
+
+        <RadioButton android:id="@+id/radioPost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/post"
+            android:onClick="onMethodButtonClicked"/>
+
+    </RadioGroup>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:id="@+id/format">
+
+            <RadioButton android:id="@+id/radioString"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/string"
+                android:onClick="onDataTypeButtonClicked"/>
+
+            <RadioButton android:id="@+id/radioJSON"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/json"
+                android:onClick="onDataTypeButtonClicked"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button"
+        android:gravity="center"
+        android:onClick="myClickHandler"
+        android:id="@+id/getDataButton"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imageSlot"
+        android:contentDescription="@string/imageViewDescription" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/receivedTextView" />
+
+</LinearLayout>

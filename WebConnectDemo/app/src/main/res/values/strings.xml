@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">WebConnectDemo</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">settings</string>
+    <string name="get">get</string>
+    <string name="post">post</string>
+    <string name="button">Get that Data</string>
+    <string name="imageViewDescription">imageReceivedSlot</string>
+    <string name="string">string</string>
+    <string name="json">json (post only)</string>
+    <string name="image">image</string>
+    <string name="postContent1">name=""</string>
+    <string name="postContent2">otherValue=""</string>
+
+</resources>
